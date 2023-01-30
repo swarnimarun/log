@@ -503,7 +503,7 @@ impl Level {
 
     /// Returns the most verbose logging level.
     #[inline]
-    pub fn max() -> Level {
+    pub const fn max() -> Level {
         Level::Trace
     }
 
@@ -612,7 +612,7 @@ impl LevelFilter {
 
     /// Returns the most verbose logging level filter.
     #[inline]
-    pub fn max() -> LevelFilter {
+    pub const fn max() -> LevelFilter {
         LevelFilter::Trace
     }
 
